@@ -1,0 +1,22 @@
+.header-logo {
+  display: inline-block;
+
+  margin-right: 160px;
+  cursor: pointer;
+}
+
+.header-logo__mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.header-logo__desktop {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}

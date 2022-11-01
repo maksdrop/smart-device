@@ -11,25 +11,34 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
+        <div class="container header__container">
           <a class="header-logo">
-            <img src="img/header/logo.png" alt="Логотип Smart Device - умные технологии.">
+            <picture>
+              <source srcset="img/header/logo-desktop.webp 1x, img/header/logo-desktop@2x.webp 2x" type="image/webp">
+              <img class="header-logo__desktop" src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device - умные технологии.">
+            </picture>
+            <picture>
+              <source srcset="img/header/logo-mobile.webp 1x, img/header/logo-mobile@2x.webp 2x" type="image/webp">
+              <img class="header-logo__mobile" src="img/header/logo-mobile.png" srcset="img/header/logo-mobile@2x.png 2x" width="35" height="35" alt="Логотип Smart Device - умные технологии.">
+            </picture>
           </a>
-          <a class="header-email" href="mailto:info@sd.ru">
-            <svg class="header-email__icon" width="21" height="20" role="img">
-              <use xlink:href="img/sprite_auto.svg#email"></use>
-            </svg>
-            info@sd.ru
-          </a>
-          <a class="header-phone" href="tel:74950005252">
-            <svg class="header-phone__link" width="21" height="20" role="img">
-              <use xlink:href="img/sprite_auto.svg#phone-call"></use>
-            </svg>
-            +7 (495) 000 52 52
-          </a>
-          <button class="header-button" type="button">
-            <span>заказать звонок</span>
-          </button>
+          <div class="header-contacts">
+            <a class="header-contacts__email" href="mailto:info@sd.ru">
+              <svg width="21" height="20" role="img">
+                <use xlink:href="img/sprite_auto.svg#email"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+            <a class="header-contacts__phone" href="tel:74950005252">
+              <svg width="21" height="20" role="img">
+                <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span>
+            </a>
+            <button class="header-contacts__button" type="button">
+              <span>заказать звонок</span>
+            </button>
+          </div>
         </div>
       </header>
       <main>
@@ -48,28 +57,28 @@
           <div class="container">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg class="header-phone__link" width="35" height="35" role="img">
+                <svg class="advantages__icon" width="35" height="35" role="img">
                   <use xlink:href="img/sprite_auto.svg#stop-watch"></use>
                 </svg>
                 <h3 class="advantages__title">Оперативные сроки</h3>
                 <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li class="advantages__item">
-                <svg class="header-phone__link" width="35" height="35" role="img">
+                <svg class="advantages__icon" width="35" height="35" role="img">
                   <use xlink:href="img/sprite_auto.svg#hired"></use>
                 </svg>
                 <h3 class="advantages__title">Крупные поставщики</h3>
                 <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item">
-                <svg class="header-phone__link" width="35" height="35" role="img">
+                <svg class="advantages__icon" width="35" height="35" role="img">
                   <use xlink:href="img/sprite_auto.svg#detective"></use>
                 </svg>
                 <h3 class="advantages__title">Полная конфиденциальность</h3>
                 <p class="advantages__description">По желанию клиента  мы обеспечиваем полную конфиденциальность.</p>
               </li>
               <li class="advantages__item">
-                <svg class="header-phone__link" width="35" height="35" role="img">
+                <svg class="advantages__icon" width="35" height="35" role="img">
                   <use xlink:href="img/sprite_auto.svg#price"></use>
                 </svg>
                 <h3 class="advantages__title">Персонализация стоимости</h3>
