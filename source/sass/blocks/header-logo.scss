@@ -3,6 +3,10 @@
 
   margin-right: 160px;
   cursor: pointer;
+
+  @include vp-374 {
+    margin-right: 124px;
+  }
 }
 
 .header-logo__mobile {

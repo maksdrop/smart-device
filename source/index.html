@@ -44,8 +44,12 @@
       <main>
         <h1 class="visually-hidden">Smart Device - умные технологии.</h1>
         <section class="intro">
-          <div class="container">
-            <h2 class="intro__title">Умные платы</h2>
+          <picture>
+            <source srcset="img/main/bg-main.webp 1x, img/main/bg-main@2x.webp 2x" type="image/webp">
+            <img class="intro__background" src="img/main/bg-main.png" srcset="img/main/bg-main@2x.png 2x" width="1920" height="880" alt="Логотип Smart Device - умные технологии.">
+          </picture>
+          <div class="container intro__container">
+            <h2 class="intro__title">Печатные платы</h2>
             <p class="intro__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
             <button class="intro__button" type="button">
               <p>получить бесплатную консультацию</p>
@@ -145,11 +149,14 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container">
+        <div class="footer__container">
           <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети.</h2>
-            <a class="footer__logo">
-              <img src="img/header/logo.png" alt="Логотип Smart Device - умные технологии.">
+            <a class="footer-social__logo">
+              <picture>
+                <source srcset="img/header/logo-desktop.webp 1x, img/header/logo-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device - умные технологии.">
+              </picture>
             </a>
             <ul class="footer-social__list">
               <li class="footer-social__item">
@@ -176,39 +183,43 @@
             </ul>
           </section>
           <section class="footer-sections">
-            <h2 class="footer-sections__title">разделы сайта</h2>
-            <ul class="footer-sections__list">
-              <li class="footer-sections__item">
-                <a href="#">О компании</a>
-              </li>
-              <li class="footer-sections__item">
-                <a href="#">Продукты</a>
-              </li>
-              <li class="footer-sections__item">
-                <a href="#">Производство печатных плат</a>
-              </li>
-              <li class="footer-sections__item">
-                <a href="#">Монтаж печатных плат</a>
-              </li>
-            </ul>
-            <ul class="footer-sections__list">
-              <li class="footer-sections__item">
-                <a href="#">Комплектующие</a>
-              </li>
-              <li class="footer-sections__item">
-                <a href="#">Доставка</a>
-              </li>
-              <li class="footer-sections__item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+            <h2 class="footer-sections__title footer__accordion">разделы сайта</h2>
+            <div class="footer-sections__container footer__accordion-container">
+              <ul class="footer-sections__list footer-sections__list--first">
+                <li class="footer-sections__item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="footer-sections__item">
+                  <a href="#">Продукты</a>
+                </li>
+                <li class="footer-sections__item">
+                  <a href="#">Производство печатных плат</a>
+                </li>
+                <li class="footer-sections__item">
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+              </ul>
+              <ul class="footer-sections__list footer-sections__list--last">
+                <li class="footer-sections__item">
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li class="footer-sections__item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="footer-sections__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="footer-contacts">
-            <h2 class="footer-contacts__title">наш офис</h2>
-            <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
-            <a class="footer-contacts__phone" href="tel:74955894050">+7 (495) 589-40-50</a>
-            <a class="footer-contacts__phone" href="tel:79253895829">+7 (925) 389-58-29</a>
-            <a class="footer-contacts__phone" href="tel:79253647813">+7 (925) 364-78-13</a>
+            <h2 class="footer-contacts__title footer__accordion">наш офис</h2>
+            <div class="footer-contacts__container footer__accordion-container">
+              <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
+              <a class="footer-contacts__phone" href="tel:74955894050">+7 (495) 589-40-50</a>
+              <a class="footer-contacts__phone" href="tel:79253895829">+7 (925) 389-58-29</a>
+              <a class="footer-contacts__phone" href="tel:79253647813">+7 (925) 364-78-13</a>
+            </div>
           </section>
         </div>
       </footer>
