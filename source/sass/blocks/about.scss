@@ -1,0 +1,87 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+
+.about__container {
+  position: relative;
+
+  display: flex;
+}
+
+.abour__year {
+  position: absolute;
+  top: 80px;
+  left: -20px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 156px;
+  line-height: 120px;
+  font-weight: 700;
+  color: transparent;
+
+  background-clip: text;
+  background-image: url("../../img/main/mask.png");
+  transform: rotate(-90deg);
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__company {
+  padding-left: 250px;
+
+  @include vp-1023 {
+    padding-left: 179px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 15px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__description {
+  margin: 0;
+
+  line-height: 22px;
+
+  &--first {
+    padding-bottom: 30px;
+  }
+
+  @include vp-374 {
+    &--hide {
+      display: none;
+    }
+  }
+}
+
+.about__button {
+  margin-top: 20px;
+  padding: 12px 50px;
+
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.about__button span {
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+}

@@ -1,0 +1,46 @@
+.questions {
+  position: relative;
+  background: #00b3ff;
+  overflow: hidden;
+
+  &::before {
+    content: url("../../img/main/polygon.png");
+    position: absolute;
+    bottom: -7px;
+    z-index: 0;
+  }
+}
+
+.question__container {
+  position: relative;
+  z-index: 1;
+
+  width: 585px;
+  margin-left: auto;
+
+  &::before {
+    content: url("../../img/main/paper-airplane.png");
+    position: absolute;
+    left: -620px;
+    top: 250px;
+  }
+}
+
+.questions__title {
+  margin: 0;
+  padding-top: 170px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.questions__free {
+  margin: 0;
+  padding-top: 9px;
+
+  line-height: 22px;
+  color: #ffffff;
+}

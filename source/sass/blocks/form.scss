@@ -1,0 +1,130 @@
+.form {
+  display: grid;
+  grid-template-areas:
+    "wrapper wrapper"
+    "button checkbox";
+
+  width: 580px;
+  margin-left: auto;
+  padding-top: 35px;
+  padding-bottom: 250px;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 275px 275px;
+  grid-template-areas:
+    "name phone"
+    "question question";
+  grid-area: wrapper;
+  column-gap: 30px;
+
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: 0;
+}
+
+.form__input {
+  padding: 15px 0 15px 15px;
+
+  border: 0;
+  background-color: #019bdf;
+  color: #ffffff;
+  line-height: 22px;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.form__name {
+  grid-area: name;
+}
+
+.form__phone {
+  grid-area: phone;
+}
+
+.form__question {
+  grid-area: question;
+
+  margin-top: 20px;
+  padding: 25px 0 0 15px;
+
+  border: 0;
+  color: #ffffff;
+  background-color: #019bdf;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.form__checkbox[type="checkbox"] {
+  display: none;
+}
+
+.form__agree {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  grid-area: checkbox;
+
+  margin-left: 26px;
+
+  line-height: 16px;
+
+  &--mark {
+    position: absolute;
+    left: -26px;
+    top: 26px;
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+  }
+
+  &--text {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+}
+
+.form__checkbox[type="checkbox"]:checked + .form__agree--mark::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+
+  width: 6px;
+  height: 8px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.form__button {
+  grid-area: button;
+  display: inline-block;
+
+  width: 265px;
+  margin-right: 50px;
+  padding: 15px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #041427;
+  border: 0;
+  border-radius: 3px;
+}

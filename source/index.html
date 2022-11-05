@@ -92,15 +92,13 @@
           </div>
         </section>
         <section class="about">
-          <div class="container">
-            <picture>
-              <source srcset="img/main/bg-question.webp 1x, img/main/bg-question@2x.webp 2x" type="image/webp">
-              <img class="map__image" src="img/main/bg-question.png" srcset="img/main/bg-question@2x.png 2x" width="150" height="320" loading="lazy" alt="Карта.">
-            </picture>
+          <div class="container about__container">
+            <span class="abour__year">2022</span>
             <div class="about__company">
               <h2 class="about__title">О компании</h2>
-              <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-              <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+              <p class="about__description about__description--first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+              <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
+              <p class="about__description about__description--hide">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
               <button class="about__button" type="button">
                 <span>подробнее</span>
               </button>
@@ -111,17 +109,17 @@
           <div class="container">
             <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
             <ul class="services__list">
-              <li class="services__item">
+              <li class="services__item services__item--production">
                 <a class="services__link" href="#">
                   <h3 class="services__subtitle">Производство печатных плат</h3>
                 </a>
               </li>
-              <li class="services__item">
+              <li class="services__item services__item--mounting">
                 <a class="services__link" href="#">
                   <h3 class="services__subtitle">Монтаж печатных плат</h3>
                 </a>
               </li>
-              <li class="services__item">
+              <li class="services__item services__item--kits">
                 <a class="services__link" href="#">
                   <h3 class="services__subtitle">Комплектующие для светотехники</h3>
                 </a>
@@ -131,20 +129,25 @@
         </section>
         <section class="questions">
           <div class="container">
-            <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
-            <p class="questions__free">Мы проконсультируем Вас бесплатно</p>
-            <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset>
-                <input class="form__name" type="text" name="name" placeholder="Имя" required>
-                <input class="form__phone" type="tel" name="phone" placeholder="Телефон" required>
-                <textarea class="form__question" name="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
-              </fieldset>
-              <input class="form__checkbox" id="agree" type="checkbox" required>
-              <label for="agree">Я согласен на обработку персональных данных</label>
-              <button class="form__button" type="submit">
-                <span>задать вопрос</span>
-              </button>
-            </form>
+            <div class="question__container">
+              <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
+              <p class="questions__free">Мы проконсультируем Вас бесплатно</p>
+              <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="form__wrapper">
+                  <input class="form__input form__name" type="text" name="name" placeholder="Имя" required>
+                  <input class="form__input form__phone" type="tel" name="phone" placeholder="Телефон" required>
+                  <textarea class="form__question" name="question" placeholder="Ваш вопрос" cols="10" rows="7"></textarea>
+                </fieldset>
+                <label class="form__agree">
+                  <input class="form__checkbox" id="agree" type="checkbox" required>
+                  <span class="form__agree--mark"></span>
+                  <span class="form__agree--text">Я согласен на обработку персональных данных</span>
+                  </label>
+                <button class="form__button" type="submit">
+                  <span>задать вопрос</span>
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </main>

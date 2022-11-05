@@ -1,0 +1,153 @@
+.services {
+  position: relative;
+  background-color: #041827;
+}
+
+.services__title {
+  margin: 0;
+  padding-top: 70px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 650px;
+  gap: 85px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 140px;
+
+  list-style-type: none;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+
+    padding-bottom: 75px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 86px;
+  }
+}
+
+.services__list h3 {
+  max-width: 210px;
+
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 40px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+
+  @include vp-1439 {
+    padding-top: 40px;
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
+
+.services__item {
+  position: relative;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #00b2ff;
+    border-radius: 3px 0 0 0;
+    background-image: url("../../img/services/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--production {
+    background-image: url("../../img/services/services-prodaction-desktop.png");
+
+    @include retina {
+      background-image: url("../../img/services/services-prodaction-desktop@2x.png");
+    }
+  }
+
+  &--mounting {
+    background-image: url("../../img/services/services-mounting-desktop.png");
+
+    @include retina {
+      background-image: url("../../img/services/services-mounting-desktop@2x.png");
+    }
+  }
+
+  &--kits {
+    background-image: url("../../img/services/services-kits-desktop.png");
+
+    @include retina {
+      background-image: url("../../img/services/services-kits-desktop@2x.png");
+    }
+  }
+
+  @include vp-1439 {
+    position: relative;
+    height: 250px;
+
+    object-fit: cover;
+    background-position: 100%;
+
+    &--production {
+      background-image: url("../../img/services/services-prodaction-tablet.png");
+      background-size: cover;
+
+      @include retina {
+        background-image: url("../../img/services/services-prodaction-tablet@2x.png");
+      }
+    }
+
+    &--mounting {
+      background-image: url("../../img/services/services-mounting-tablet.png");
+
+      @include retina {
+        background-image: url("../../img/services/services-mounting-tablet@2x.png");
+      }
+    }
+
+    &--kits {
+      background-image: url("../../img/services/services-kits-tablet.png");
+
+      @include retina {
+        background-image: url("../../img/services/services-kits-tablet@2x.png");
+      }
+    }
+  }
+}
+
+.services__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  @include vp-1439 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
