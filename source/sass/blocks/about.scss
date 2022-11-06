@@ -59,8 +59,16 @@
     padding-bottom: 30px;
   }
 
+  &--indent {
+    padding-top: 30px;
+  }
+
+  &--hide {
+    display: none;
+  }
+
   @include vp-374 {
-    &--hide {
+    &--hide-mobile {
       display: none;
     }
   }
@@ -70,13 +78,6 @@
   margin-top: 20px;
   padding: 12px 50px;
 
-  border: 1px solid #00b2ff;
-  border-radius: 3px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.about__button span {
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   line-height: 16px;
@@ -84,4 +85,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00b2ff;
+
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -21,12 +21,12 @@ function showAccordion() {
   hideContent();
 
   accordion.forEach((item, i) => {
-    item.addEventListener('click', (e) => {
-      console.log(i, item);
-      const target = e.target;
-      if (target === item) {
+    item.addEventListener('click', () => {
+      if (item.classList.contains('footer__accorion--close')) {
         hideContent();
         showContent(i);
+      } else {
+        hideContent();
       }
     });
   });

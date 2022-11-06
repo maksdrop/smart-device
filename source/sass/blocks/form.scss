@@ -4,10 +4,25 @@
     "wrapper wrapper"
     "button checkbox";
 
-  width: 580px;
+  max-width: 580px;
   margin-left: auto;
   padding-top: 35px;
   padding-bottom: 250px;
+
+  @include vp-1439 {
+    max-width: 670px;
+    padding-bottom: 125px;
+  }
+
+  @include vp-767 {
+    grid-template-areas:
+      "wrapper"
+      "button"
+      "checkbox";
+    grid-template-columns: 1fr;
+
+    padding-bottom: 90px;
+  }
 }
 
 .form__wrapper {
@@ -23,6 +38,18 @@
   margin-bottom: 35px;
   padding: 0;
   border: 0;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-areas:
+      "name"
+      "phone"
+      "question";
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -45,6 +72,10 @@
 
 .form__phone {
   grid-area: phone;
+
+  @include vp-767 {
+    margin-top: 20px;
+  }
 }
 
 .form__question {
@@ -94,6 +125,22 @@
     color: #ffffff;
     opacity: 0.8;
   }
+
+  @include vp-767 {
+    padding-top: 25px;
+    padding-left: 5px;
+
+    &--mark {
+      left: -21px;
+      top: 26px;
+    }
+  }
+
+  @include vp-374 {
+    &--mark {
+      top: 32px;
+    }
+  }
 }
 
 .form__checkbox[type="checkbox"]:checked + .form__agree--mark::before {
@@ -127,4 +174,13 @@
   background-color: #041427;
   border: 0;
   border-radius: 3px;
+
+  @include vp-1439 {
+    margin-right: 85px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-right: 0;
+  }
 }

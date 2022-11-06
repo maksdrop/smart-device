@@ -625,6 +625,7 @@ button,
 }
 
 .container {
+  position: relative;
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;
@@ -1045,16 +1046,17 @@ button,
   padding-bottom: 30px;
 }
 
+.about__description--indent {
+  padding-top: 30px;
+}
+
+.about__description--hide {
+  display: none;
+}
+
 .about__button {
   margin-top: 20px;
   padding: 12px 50px;
-  border: 1px solid #00b2ff;
-  border-radius: 3px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.about__button span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -1062,6 +1064,10 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .services {
@@ -1157,16 +1163,14 @@ button,
 }
 
 .question__container {
-  position: relative;
-  z-index: 1;
-  width: 585px;
+  max-width: 585px;
   margin-left: auto;
 }
 
 .question__container::before {
   content: url("../../img/main/paper-airplane.png");
   position: absolute;
-  left: -620px;
+  left: 4%;
   top: 250px;
 }
 
@@ -1191,7 +1195,7 @@ button,
   display: -ms-grid;
   display: grid;
   grid-template-areas: "wrapper wrapper" "button checkbox";
-  width: 580px;
+  max-width: 580px;
   margin-left: auto;
   padding-top: 35px;
   padding-bottom: 250px;
@@ -1634,6 +1638,37 @@ button,
     width: 100%;
     height: 100%;
   }
+
+  .questions::before {
+    display: none;
+  }
+
+  .question__container {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  .question__container::before {
+    display: none;
+  }
+
+  .questions__title {
+    padding-top: 50px;
+  }
+
+  .form {
+    max-width: 670px;
+    padding-bottom: 125px;
+  }
+
+  .form__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__button {
+    margin-right: 85px;
+  }
 }
 
 @media (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1439px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1439px) and (min-resolution: 144dpi), (max-width: 1439px) and (min-resolution: 1.5dppx) {
@@ -1847,6 +1882,80 @@ button,
     padding-left: 30px;
   }
 
+  .questions__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .questions__free {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form {
+    grid-template-areas: "wrapper" "button" "checkbox";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 90px;
+  }
+
+  .form__wrapper {
+    grid-template-areas: "name" "phone" "question";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .form__phone {
+    margin-top: 20px;
+  }
+
+  .form__name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .form__phone {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .form__question {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .form__agree {
+    padding-top: 25px;
+    padding-left: 5px;
+  }
+
+  .form__agree--mark {
+    left: -21px;
+    top: 26px;
+  }
+
+  .form__wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .form__agree {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .form__button {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .form__button {
+    width: 100%;
+    margin-right: 0;
+  }
+
   .footer__container {
     grid-template-areas: "social social" "sections sections" "contacts contacts";
     padding: 0;
@@ -1981,8 +2090,12 @@ button,
     object-position: -290px;
   }
 
-  .about__description--hide {
+  .about__description--hide-mobile {
     display: none;
+  }
+
+  .form__agree--mark {
+    top: 32px;
   }
 }
 
