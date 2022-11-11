@@ -1,6 +1,6 @@
 function openBlock() {
-  const button = document.querySelector('.about__button');
-  const descriptions = document.querySelectorAll('.about__description--indent');
+  const button = document.querySelector('[data-button]');
+  const descriptions = document.querySelectorAll('[data-indent]');
 
   button.addEventListener('click', () => {
     button.textContent = 'свернуть';

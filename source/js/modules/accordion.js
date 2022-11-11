@@ -1,6 +1,6 @@
 function showAccordion() {
-  const accordion = document.querySelectorAll('.footer__accordion');
-  const listAccordion = document.querySelectorAll('.footer__accordion-container');
+  const accordion = document.querySelectorAll('[data-accordion]');
+  const listAccordion = document.querySelectorAll('[data-accardion-list]');
 
   const hideContent = () => {
     accordion.forEach((item) => {

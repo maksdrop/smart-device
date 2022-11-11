@@ -2,6 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import showAccordion from './modules/accordion';
 import openBlock from './modules/about-open';
+import useMask from './modules/form-mask';
+import './modules/form-validation';
+import initValidation from './modules/form-validation';
+import scrollElement from './modules/scroll';
 
 // ---------------------------------
 
@@ -11,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   // Modules
   // ---------------------------------
 
@@ -21,6 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     showAccordion();
     openBlock();
+    useMask();
+    initValidation('[data-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-phone]', '[data-attribute]');
+    initValidation('[data-modal-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-phone]', '[data-attribute]');
+    scrollElement();
   });
 });
 

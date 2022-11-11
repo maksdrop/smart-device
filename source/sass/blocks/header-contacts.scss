@@ -94,6 +94,8 @@
   border-radius: 3px;
   background-color: transparent;
 
+  cursor: pointer;
+
   @include vp-1279 {
     display: none;
   }

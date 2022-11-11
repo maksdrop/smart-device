@@ -726,7 +726,24 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b3ff;
+}
+
+.modal__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.modal__description {
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 120px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .modal__close-btn {
@@ -769,6 +786,10 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__close-btn svg {
+  fill: #ffffff;
 }
 
 .header {
@@ -862,6 +883,7 @@ button,
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header-contacts__button span {
@@ -903,6 +925,7 @@ button,
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
+  text-transform: uppercase;
   color: #f2f5f7;
 }
 
@@ -921,6 +944,7 @@ button,
   border: 0;
   border-radius: 3px;
   background-color: #00b2ff;
+  cursor: pointer;
 }
 
 .intro__button p {
@@ -933,6 +957,10 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+}
+
+.intro__button--mobile {
+  display: none;
 }
 
 .advantages {
@@ -1221,11 +1249,12 @@ button,
 }
 
 .form__input {
+  width: 100%;
   padding: 15px 0 15px 15px;
   border: 0;
   background-color: #019bdf;
   color: #ffffff;
-  line-height: 22px;
+  line-height: 20px;
   border-radius: 3px;
 }
 
@@ -1253,6 +1282,11 @@ button,
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
+}
+
+.form__label-name,
+.form__label-phone {
+  position: relative;
 }
 
 .form__phone {
@@ -1295,7 +1329,17 @@ button,
 }
 
 .form__checkbox[type=checkbox] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .form__agree {
@@ -1361,6 +1405,7 @@ button,
   background-color: #041427;
   border: 0;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .footer {
@@ -1490,6 +1535,68 @@ button,
 .footer-contacts__phone {
   padding-top: 10px;
   line-height: 25px;
+}
+
+.form-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form-modal fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-modal__name {
+  margin-top: 40px;
+}
+
+.form-modal__phone {
+  margin-top: 20px;
+}
+
+.form-modal__question {
+  width: 100%;
+}
+
+.form-modal__agree {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  padding-top: 20px;
+  margin-left: 34px;
+}
+
+.form-modal__agree--mark {
+  top: 20px;
+}
+
+.form-modal__button {
+  margin-top: 25px;
+  padding: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  line-height: 19px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  background-color: #041427;
+  cursor: pointer;
 }
 
 /* @mixin hover-focus {
@@ -1788,13 +1895,17 @@ button,
   }
 
   .intro__title {
-    padding-top: 180px;
+    padding-top: 315px;
     font-size: 64px;
     line-height: 75px;
   }
 
   .intro__description {
     padding-top: 20px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
   }
 
   .about__company {
@@ -1842,18 +1953,33 @@ button,
   }
 
   .intro__title {
+    padding-top: 280px;
     font-size: 36px;
     line-height: 42px;
   }
 
   .intro__description {
+    max-width: 470px;
     font-size: 14px;
     line-height: 22px;
   }
 
+  .intro__button {
+    margin-left: 0;
+  }
+
   .intro__button p {
+    padding: 12px 37px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .intro__button--desktop {
+    display: none;
+  }
+
+  .intro__button--mobile {
+    display: block;
   }
 
   .advantages__list {
@@ -1863,6 +1989,8 @@ button,
 
   .advantages__item {
     max-width: 100%;
+    padding-left: 25px;
+    padding-right: 30px;
   }
 
   .abour__year {
