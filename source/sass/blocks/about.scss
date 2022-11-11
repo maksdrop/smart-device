@@ -41,13 +41,15 @@
   }
 }
 
-.about__title {
-  margin: 0;
-  padding-bottom: 15px;
-
+.about__company h2 {
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .about__description {

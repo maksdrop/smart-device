@@ -2,6 +2,8 @@
   display: inline-block;
 
   margin-right: 160px;
+
+  vertical-align: bottom;
   cursor: pointer;
 
   @include vp-374 {

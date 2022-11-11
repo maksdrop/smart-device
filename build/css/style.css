@@ -815,6 +815,7 @@ button,
 .header-logo {
   display: inline-block;
   margin-right: 160px;
+  vertical-align: bottom;
   cursor: pointer;
 }
 
@@ -917,9 +918,7 @@ button,
   padding-bottom: 280px;
 }
 
-.intro__title {
-  margin: 0;
-  padding-top: 305px;
+.intro__container h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -929,13 +928,21 @@ button,
   color: #f2f5f7;
 }
 
+.intro__container p {
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+}
+
+.intro__title {
+  margin: 0;
+  padding-top: 305px;
+}
+
 .intro__description {
   max-width: 685px;
   margin: 0;
   padding-top: 40px;
-  font-size: 22px;
-  line-height: 34px;
-  color: #f2f5f7;
 }
 
 .intro__button {
@@ -947,7 +954,7 @@ button,
   cursor: pointer;
 }
 
-.intro__button p {
+.intro__button span {
   margin: 0;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -957,6 +964,10 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+}
+
+.intro__button--desktop {
+  display: block;
 }
 
 .intro__button--mobile {
@@ -1002,13 +1013,21 @@ button,
   fill: #f2f5f6;
 }
 
-.advantages__title {
-  margin: 0;
-  padding-top: 20px;
+.advantages__item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
+}
+
+.advantages__item p {
+  line-height: 22px;
+  color: #041827;
+}
+
+.advantages__title {
+  margin: 0;
+  padding-top: 20px;
 }
 
 .advantages__description {
@@ -1016,8 +1035,6 @@ button,
   margin: 0;
   padding-top: 15px;
   padding-bottom: 35px;
-  line-height: 22px;
-  color: #041827;
 }
 
 .advantages__item:hover .advantages__description {
@@ -1057,12 +1074,15 @@ button,
   padding-left: 250px;
 }
 
-.about__title {
-  margin: 0;
-  padding-bottom: 15px;
+.about__company h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .about__description {
@@ -1202,9 +1222,7 @@ button,
   top: 250px;
 }
 
-.questions__title {
-  margin: 0;
-  padding-top: 170px;
+.question__container h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -1212,11 +1230,19 @@ button,
   color: #ffffff;
 }
 
+.question__container p {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.questions__title {
+  margin: 0;
+  padding-top: 170px;
+}
+
 .questions__free {
   margin: 0;
   padding-top: 9px;
-  line-height: 22px;
-  color: #ffffff;
 }
 
 .form {
@@ -1396,16 +1422,20 @@ button,
   width: 265px;
   margin-right: 50px;
   padding: 15px;
+  background-color: #041427;
+  border: 0;
+  border-radius: 3px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.form__button span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #041427;
-  border: 0;
-  border-radius: 3px;
-  cursor: pointer;
 }
 
 .footer {
@@ -1458,15 +1488,18 @@ button,
   padding-top: 5px;
 }
 
-.footer-sections__title {
-  position: relative;
-  margin: 0;
+.footer-sections h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.footer-sections__title {
+  position: relative;
+  margin: 0;
 }
 
 .footer-sections__container {
@@ -1505,6 +1538,20 @@ button,
   padding-top: 5px;
 }
 
+.footer-contacts h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-contacts__title {
+  position: relative;
+  margin: 0;
+}
+
 .footer-contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,17 +1560,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.footer-contacts__title {
-  position: relative;
-  margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .footer-contacts__address {
@@ -1584,9 +1620,7 @@ button,
   top: 20px;
 }
 
-.form-modal__button {
-  margin-top: 25px;
-  padding: 15px;
+.form-modal button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   line-height: 19px;
   font-weight: 700;
@@ -1597,6 +1631,11 @@ button,
   border-radius: 3px;
   background-color: #041427;
   cursor: pointer;
+}
+
+.form-modal__button {
+  margin-top: 25px;
+  padding: 15px;
 }
 
 /* @mixin hover-focus {
@@ -1894,6 +1933,11 @@ button,
     padding-bottom: 205px;
   }
 
+  .intro__container h2 {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
   .intro__title {
     padding-top: 315px;
     font-size: 64px;
@@ -1952,23 +1996,29 @@ button,
     padding-bottom: 190px;
   }
 
-  .intro__title {
-    padding-top: 280px;
+  .intro__container h2 {
     font-size: 36px;
     line-height: 42px;
   }
 
-  .intro__description {
-    max-width: 470px;
+  .intro__container p {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .intro__title {
+    padding-top: 280px;
+  }
+
+  .intro__description {
+    max-width: 470px;
   }
 
   .intro__button {
     margin-left: 0;
   }
 
-  .intro__button p {
+  .intro__button span {
     padding: 12px 37px;
     font-size: 14px;
     line-height: 16px;
@@ -2010,12 +2060,12 @@ button,
     padding-left: 30px;
   }
 
-  .questions__title {
+  .question__container h2 {
     font-size: 30px;
     line-height: 42px;
   }
 
-  .questions__free {
+  .question__container p {
     font-size: 14px;
     line-height: 19px;
   }
@@ -2178,10 +2228,6 @@ button,
     border-bottom: 1px solid #afb8be;
   }
 
-  .footer-contacts__container {
-    padding: 0 25px 20px;
-  }
-
   .footer-contacts__title {
     padding: 20px 25px;
     cursor: pointer;
@@ -2195,6 +2241,10 @@ button,
     width: 15px;
     height: 1px;
     background-color: #afb8be;
+  }
+
+  .footer-contacts__container {
+    padding: 0 25px 20px;
   }
 
   .footer-contacts__address {

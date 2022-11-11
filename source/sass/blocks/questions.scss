@@ -38,19 +38,12 @@
   }
 }
 
-.questions__title {
-  margin: 0;
-  padding-top: 170px;
-
+.question__container h2 {
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
   color: #ffffff;
-
-  @include vp-1439 {
-    padding-top: 50px;
-  }
 
   @include vp-767 {
     font-size: 30px;
@@ -58,10 +51,7 @@
   }
 }
 
-.questions__free {
-  margin: 0;
-  padding-top: 9px;
-
+.question__container p {
   line-height: 22px;
   color: #ffffff;
 
@@ -69,4 +59,18 @@
     font-size: 14px;
     line-height: 19px;
   }
+}
+
+.questions__title {
+  margin: 0;
+  padding-top: 170px;
+
+  @include vp-1439 {
+    padding-top: 50px;
+  }
+}
+
+.questions__free {
+  margin: 0;
+  padding-top: 9px;
 }

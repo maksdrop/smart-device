@@ -25,8 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     showAccordion();
     openBlock();
     useMask();
-    initValidation('[data-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-phone]', '[data-attribute]');
-    initValidation('[data-modal-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-phone]', '[data-attribute]');
+    initValidation('[data-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-form-phone]', '[data-attribute]');
+    initValidation('[data-modal-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-form-phone]', '[data-attribute]');
     scrollElement();
   });
 });

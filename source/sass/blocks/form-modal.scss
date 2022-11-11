@@ -35,10 +35,7 @@
   }
 }
 
-.form-modal__button {
-  margin-top: 25px;
-  padding: 15px;
-
+.form-modal button {
   font-family: $ff-roboto-condensed;
   line-height: 19px;
   font-weight: 700;
@@ -50,4 +47,9 @@
   background-color: #041427;
 
   cursor: pointer;
+}
+
+.form-modal__button {
+  margin-top: 25px;
+  padding: 15px;
 }

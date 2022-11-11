@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей.">
-    <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/PTMono-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <title>Smart Device</title>
   </head>
   <body>
     <div class="wrapper">
@@ -17,11 +17,11 @@
           <a class="header-logo">
             <picture>
               <source srcset="img/header/logo-desktop.webp 1x, img/header/logo-desktop@2x.webp 2x" type="image/webp">
-              <img class="header-logo__desktop" src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device - умные технологии.">
+              <img class="header-logo__desktop" src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device.">
             </picture>
             <picture>
               <source srcset="img/header/logo-mobile.webp 1x, img/header/logo-mobile@2x.webp 2x" type="image/webp">
-              <img class="header-logo__mobile" src="img/header/logo-mobile.png" srcset="img/header/logo-mobile@2x.png 2x" width="35" height="35" alt="Логотип Smart Device - умные технологии.">
+              <img class="header-logo__mobile" src="img/header/logo-mobile.png" srcset="img/header/logo-mobile@2x.png 2x" width="35" height="35" alt="Логотип Smart Device.">
             </picture>
           </a>
           <div class="header-contacts">
@@ -48,14 +48,14 @@
         <section class="intro">
           <picture>
             <source srcset="img/main/bg-main.webp 1x, img/main/bg-main@2x.webp 2x" type="image/webp">
-            <img class="intro__background" src="img/main/bg-main.png" srcset="img/main/bg-main@2x.png 2x" width="1920" height="880" alt="Логотип Smart Device - умные технологии.">
+            <img class="intro__background" src="img/main/bg-main.png" srcset="img/main/bg-main@2x.png 2x" width="1920" height="880" alt="Логотип Smart Device.">
           </picture>
           <div class="container intro__container">
             <h2 class="intro__title">Печатные платы</h2>
             <p class="intro__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
             <button class="intro__button" type="button">
-              <p class="intro__button--desktop">получить бесплатную консультацию</p>
-              <p class="intro__button--mobile">бесплатная консультация</p>
+              <span class="intro__button--desktop">получить бесплатную консультацию</span>
+              <span class="intro__button--mobile">бесплатная консультация</span>
             </button>
           </div>
         </section>
@@ -141,7 +141,7 @@
                     <input class="form__input form__name" type="text" name="name" placeholder="Имя" pattern="^[a-zA-Za-Яа-яЁё]+$" maxlength="25" data-name data-attribute required>
                   </label>
                   <label class="form__label-phone" data-parent-phone>
-                    <input class="form__input form__phone" data-phone type="tel" name="phone" placeholder="Телефон" data-phone data-attribute required>
+                    <input class="form__input form__phone" data-phone type="tel" name="phone" placeholder="Телефон" data-form-phone data-attribute required>
                   </label>
                   <textarea class="form__question" name="question" placeholder="Ваш вопрос" cols="10" rows="7"></textarea>
                 </fieldset>
@@ -165,7 +165,7 @@
             <a class="footer-social__logo">
               <picture>
                 <source srcset="img/header/logo-desktop.webp 1x, img/header/logo-desktop@2x.webp 2x" type="image/webp">
-                <img src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device - умные технологии.">
+                <img src="img/header/logo-desktop.png" srcset="img/header/logo-desktop@2x.png 2x" width="215" height="55" alt="Логотип Smart Device.">
               </picture>
             </a>
             <ul class="footer-social__list">
@@ -248,7 +248,7 @@
                 <input class="form-modal__name form__input" type="text" name="name" placeholder="Имя" pattern="^[a-zA-Za-Яа-яЁё]+$" maxlength="25" data-name data-focus data-attribute required>
               </label>
               <label class="form__label-phone" data-parent-phone>
-                <input class="form-modal__phone form__input" data-phone type="tel" name="phone" placeholder="Телефон" data-phone data-attribute required>
+                <input class="form-modal__phone form__input" data-phone type="tel" name="phone" placeholder="Телефон" data-form-phone data-attribute required>
               </label>
               <textarea class="form-modal__question form__question" name="question" placeholder="Ваш вопрос" cols="30" rows="7"></textarea>
             </fieldset>
@@ -256,7 +256,7 @@
               <span>отправить</span>
             </button>
             <label class="form-modal__agree form__agree">
-              <input class="form-modal__checkbox form__checkbox" name="checkbox" id="agree" type="checkbox" required checked>
+              <input class="form-modal__checkbox form__checkbox" name="checkbox" id="agree-modal" type="checkbox" required checked>
               <span class="form-modal__agree--mark form__agree--mark" tabindex="0"></span>
               <span class="form__agree--text">Я согласен на обработку персональных данных</span>
             </label>
