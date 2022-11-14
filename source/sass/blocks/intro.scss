@@ -120,6 +120,7 @@
 }
 
 .intro__button span {
+  display: block;
   margin: 0;
   padding: 17px 27px;
 
@@ -136,21 +137,5 @@
 
     font-size: 14px;
     line-height: 16px;
-  }
-}
-
-.intro__button-desktop {
-  display: block;
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.intro__button-mobile {
-  display: none;
-
-  @include vp-767 {
-    display: block;
   }
 }

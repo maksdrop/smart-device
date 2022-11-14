@@ -6,6 +6,7 @@ import useMask from './modules/form-mask';
 import './modules/form-validation';
 import initValidation from './modules/form-validation';
 import scrollElement from './modules/scroll';
+import showNewText from './modules/toggle-text';
 
 // ---------------------------------
 
@@ -28,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initValidation('[data-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-form-phone]', '[data-attribute]');
     initValidation('[data-modal-form]', '[data-parent-name]', '[data-parent-phone]', '[data-name]', '[data-form-phone]', '[data-attribute]');
     scrollElement();
+    showNewText('[data-toggle-intro]', '(max-width: 768px)', 'получить бесплатную консультацию', 'бесплатная консультация');
+    showNewText('[data-toggle-services]', '(max-width: 768px)', 'Smart Device предлагает следующие товары и услуги', 'Товары и услуги Smart Device');
   });
 });
 

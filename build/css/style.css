@@ -935,6 +935,7 @@ button,
 }
 
 .intro__button span {
+  display: block;
   margin: 0;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -944,14 +945,6 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
-}
-
-.intro__button-desktop {
-  display: block;
-}
-
-.intro__button-mobile {
-  display: none;
 }
 
 .advantages {
@@ -1105,14 +1098,6 @@ button,
   line-height: 51px;
   font-weight: 400;
   color: #ffffff;
-}
-
-.services__title-mobile {
-  display: none;
-}
-
-.services__title-desktop {
-  display: block;
 }
 
 .services__list {
@@ -2127,14 +2112,6 @@ button,
     line-height: 16px;
   }
 
-  .intro__button-desktop {
-    display: none;
-  }
-
-  .intro__button-mobile {
-    display: block;
-  }
-
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2152,14 +2129,6 @@ button,
 
   .about__company {
     padding-left: 0;
-  }
-
-  .services__title-mobile {
-    display: block;
-  }
-
-  .services__title-desktop {
-    display: none;
   }
 
   .services__list {
