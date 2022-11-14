@@ -925,18 +925,8 @@ button,
 
 .intro__button {
   display: inline-block;
-  padding: 0;
-  margin-top: 40px;
-  border: 0;
-  border-radius: 3px;
-  background-color: #00b2ff;
-  vertical-align: bottom;
-  cursor: pointer;
-}
-
-.intro__button span {
-  display: block;
   margin: 0;
+  margin-top: 40px;
   padding: 17px 27px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -945,6 +935,11 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+  border: 0;
+  border-radius: 3px;
+  background-color: #00b2ff;
+  vertical-align: bottom;
+  cursor: pointer;
 }
 
 .advantages {
@@ -2104,9 +2099,6 @@ button,
 
   .intro__button {
     margin-left: 0;
-  }
-
-  .intro__button span {
     padding: 12px 37px;
     font-size: 14px;
     line-height: 16px;
