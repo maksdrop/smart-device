@@ -4,7 +4,7 @@
   overflow: hidden;
 
   &::before {
-    content: url("../../img/main/polygon.png");
+    content: url("../img/main/polygon.png");
     position: absolute;
     bottom: -7px;
     z-index: 0;
@@ -22,7 +22,7 @@
   margin-left: auto;
 
   &::before {
-    content: url("../../img/main/paper-airplane.png");
+    content: url("../img/main/paper-airplane.png");
     position: absolute;
     left: 4%;
     top: 250px;

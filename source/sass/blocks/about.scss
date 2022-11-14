@@ -23,7 +23,7 @@
   left: -20px;
 
   background-clip: text;
-  background-image: url("../../img/main/mask.png");
+  background-image: url("../img/main/mask.png");
   transform: rotate(-90deg);
 
   @include vp-767 {

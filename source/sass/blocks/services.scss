@@ -77,32 +77,32 @@
     height: 60px;
     background-color: #00b2ff;
     border-radius: 3px 0 0 0;
-    background-image: url("../../img/services/arrow.svg");
+    background-image: url("../img/services/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--production {
-    background-image: url("/img/services/services-prodaction-desktop.png");
+    background-image: url("../img/services/services-prodaction-desktop.png");
 
     @include retina {
-      background-image: url("/img/services/services-prodaction-desktop@2x.png");
+      background-image: url("../img/services/services-prodaction-desktop@2x.png");
     }
   }
 
   &--mounting {
-    background-image: url("/img/services/services-mounting-desktop.png");
+    background-image: url("../img/services/services-mounting-desktop.png");
 
     @include retina {
-      background-image: url("/img/services/services-mounting-desktop@2x.png");
+      background-image: url("../img/services/services-mounting-desktop@2x.png");
     }
   }
 
   &--kits {
-    background-image: url("/img/services/services-kits-desktop.png");
+    background-image: url("../img/services/services-kits-desktop.png");
 
     @include retina {
-      background-image: url("/img/services/services-kits-desktop@2x.png");
+      background-image: url("../img/services/services-kits-desktop@2x.png");
     }
   }
 
@@ -114,27 +114,27 @@
     background-position: 100%;
 
     &--production {
-      background-image: url("/img/services/services-prodaction-tablet.png");
+      background-image: url("../img/services/services-prodaction-tablet.png");
       background-size: cover;
 
       @include retina {
-        background-image: url("/img/services/services-prodaction-tablet@2x.png");
+        background-image: url("../img/services/services-prodaction-tablet@2x.png");
       }
     }
 
     &--mounting {
-      background-image: url("/img/services/services-mounting-tablet.png");
+      background-image: url("../img/services/services-mounting-tablet.png");
 
       @include retina {
-        background-image: url("/img/services/services-mounting-tablet@2x.png");
+        background-image: url("../img/services/services-mounting-tablet@2x.png");
       }
     }
 
     &--kits {
-      background-image: url("/img/services/services-kits-tablet.png");
+      background-image: url("../img/services/services-kits-tablet.png");
 
       @include retina {
-        background-image: url("/img/services/services-kits-tablet@2x.png");
+        background-image: url("../img/services/services-kits-tablet@2x.png");
       }
     }
   }
