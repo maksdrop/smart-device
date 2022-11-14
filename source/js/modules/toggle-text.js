@@ -1,12 +1,12 @@
-function showNewText(selectorElement, viewport, text, newText) {
+function showNewText(selectorElement, viewport) {
   const textElement = document.querySelector(selectorElement);
   const screen = window.matchMedia(viewport);
 
   function changeScreen(e) {
     if (e.matches) {
-      textElement.textContent = newText;
+      textElement.textContent = textElement.dataset.toggleMobile;
     } else {
-      textElement.textContent = text;
+      textElement.textContent = textElement.dataset.toggleDesktop;
     }
   }
   screen.addListener(changeScreen);

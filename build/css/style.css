@@ -1158,10 +1158,15 @@ button,
 }
 
 .questions::before {
-  content: url("../img/main/polygon.png");
+  content: "";
   position: absolute;
-  bottom: -7px;
+  top: -5px;
   z-index: 0;
+  width: 52%;
+  height: 100%;
+  background-color: #026593;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
 .questions__container {
