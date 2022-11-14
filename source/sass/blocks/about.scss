@@ -9,16 +9,18 @@
   display: flex;
 }
 
-.abour__year {
-  position: absolute;
-  top: 80px;
-  left: -20px;
-
+.about__container span {
   font-family: $ff-roboto-condensed;
   font-size: 156px;
   line-height: 120px;
   font-weight: 700;
   color: transparent;
+}
+
+.about__year {
+  position: absolute;
+  top: 80px;
+  left: -20px;
 
   background-clip: text;
   background-image: url("../../img/main/mask.png");
@@ -32,6 +34,24 @@
 .about__company {
   padding-left: 250px;
 
+  &-first {
+    padding-bottom: 30px;
+  }
+
+  &-indent {
+    padding-top: 30px;
+  }
+
+  &-hide {
+    display: none;
+  }
+
+  @include vp-374 {
+    &-mobile {
+      display: none;
+    }
+  }
+
   @include vp-1023 {
     padding-left: 179px;
   }
@@ -42,38 +62,18 @@
 }
 
 .about__company h2 {
+  margin: 0;
+  padding-bottom: 15px;
+
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
 }
 
-.about__title {
-  margin: 0;
-  padding-bottom: 15px;
-}
-
-.about__description {
+.about__company p {
   margin: 0;
 
   line-height: 22px;
-
-  &--first {
-    padding-bottom: 30px;
-  }
-
-  &--indent {
-    padding-top: 30px;
-  }
-
-  &--hide {
-    display: none;
-  }
-
-  @include vp-374 {
-    &--hide-mobile {
-      display: none;
-    }
-  }
 }
 
 .about__button {

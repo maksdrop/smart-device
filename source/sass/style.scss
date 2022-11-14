@@ -10,7 +10,7 @@
 
 @import "variables";
 @import "mixins";
-@import "global/fonts";
+@import "fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
@@ -22,7 +22,6 @@
 @import "blocks/modal";
 @import "blocks/header";
 @import "blocks/header-logo";
-@import "blocks/header-contacts";
 @import "blocks/intro";
 @import "blocks/advantages";
 @import "blocks/about";

@@ -6,6 +6,10 @@
   vertical-align: bottom;
   cursor: pointer;
 
+  @include vp-1279 {
+    flex-grow: 2;
+  }
+
   @include vp-374 {
     margin-right: 124px;
   }

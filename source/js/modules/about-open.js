@@ -6,9 +6,9 @@ function openBlock() {
     button.textContent = 'свернуть';
 
     descriptions.forEach((item) => {
-      item.classList.toggle('about__description--hide');
+      item.classList.toggle('about__company-hide');
 
-      if (item.classList.contains('about__description--hide')) {
+      if (item.classList.contains('about__company-hide')) {
         button.textContent = 'подробнее';
       }
     });

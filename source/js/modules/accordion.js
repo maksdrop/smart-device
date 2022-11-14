@@ -1,6 +1,6 @@
 function showAccordion() {
   const accordion = document.querySelectorAll('[data-accordion]');
-  const listAccordion = document.querySelectorAll('[data-accardion-list]');
+  const listAccordion = document.querySelectorAll('[data-accordion-list]');
 
   const hideContent = () => {
     accordion.forEach((item) => {
