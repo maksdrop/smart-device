@@ -1,12 +1,19 @@
 .footer {
-  padding-top: 50px;
+  flex: 0 0 auto;
+
+  padding-top: 52px;
   padding-bottom: 55px;
 
   background-color: #041827;
   color: #b4babe;
 
-  @include vp-1279 {
+  @include vp-1023 {
+    padding-top: 48px;
     padding-bottom: 65px;
+  }
+
+  @include vp-1023 {
+    padding-top: 33px;
   }
 }
 

@@ -1,6 +1,14 @@
 .about {
-  padding-top: 125px;
-  padding-bottom: 100px;
+  padding: 120px 0;
+
+  @include vp-1023 {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 48px;
+  }
 }
 
 .about__container {
@@ -19,12 +27,16 @@
 
 .about__year {
   position: absolute;
-  top: 80px;
-  left: -20px;
+  top: 105px;
+  left: -6px;
 
   background-clip: text;
   background-image: url("../img/main/mask.png");
   transform: rotate(-90deg);
+
+  @include vp-1023 {
+    left: -20px;
+  }
 
   @include vp-767 {
     display: none;
@@ -35,7 +47,7 @@
   padding-left: 250px;
 
   &-first {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   &-indent {
@@ -68,17 +80,33 @@
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
+
+  @include vp-1023 {
+    padding-bottom: 10px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 12px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .about__company p {
   margin: 0;
 
   line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .about__button {
-  margin-top: 20px;
-  padding: 12px 50px;
+  margin-top: 40px;
+  padding: 13px 50px;
 
   font-family: $ff-roboto-condensed;
   font-size: 14px;
@@ -92,4 +120,28 @@
   border-radius: 3px;
   background-color: transparent;
   cursor: pointer;
+
+  @include hover {
+    color: #ffffff;
+    border-color: #00b2ff;
+    background-color: #00b2ff;
+  }
+
+  @include hover-focus {
+    color: #ffffff;
+    background-color: #00b2ff;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
+
+  @include vp-1023 {
+    margin-top: 16px;
+  }
+
+  @include vp-767 {
+    margin-top: 12px;
+    padding: 8px 40px;
+  }
 }

@@ -27,6 +27,14 @@
   line-height: 20px;
   border-radius: 3px;
 
+  @include hover {
+    background-color: #58c4f3;
+  }
+
+  @include focus {
+    background-color: #58c4f3;
+  }
+
   &::placeholder {
     color: #ffffff;
   }
@@ -51,6 +59,14 @@
   color: #ffffff;
   background-color: #019bdf;
   border-radius: 3px;
+
+  @include hover {
+    background-color: #58c4f3;
+  }
+
+  @include focus {
+    background-color: #58c4f3;
+  }
 
   &::placeholder {
     color: #ffffff;
@@ -147,7 +163,20 @@
   border-radius: 3px;
   background-color: #041427;
 
+  user-select: none;
   cursor: pointer;
+
+  @include hover {
+    background-color: #333333;
+  }
+
+  @include focus {
+    background-color: #333333;
+  }
+
+  @include active {
+    opacity: 0.9;
+  }
 }
 
 .form-modal__button {

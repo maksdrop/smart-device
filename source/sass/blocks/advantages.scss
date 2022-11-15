@@ -1,5 +1,13 @@
 .advantages {
   padding-top: 120px;
+
+  @include vp-1023 {
+    padding-top: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+  }
 }
 
 .advantages__list {
@@ -21,11 +29,10 @@
 }
 
 .advantages__item {
-  max-width: 590px;
-
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 45px;
+  padding-bottom: 45px;
 
   color: #00b2ff;
   border: 1px solid #ebebeb;
@@ -37,16 +44,26 @@
     color: #f2f5f6;
   }
 
+  @include vp-1023 {
+    padding-bottom: 6px;
+  }
+
   @include vp-767 {
     max-width: 100%;
 
+    padding-top: 26px;
     padding-left: 25px;
     padding-right: 30px;
+    padding-bottom: 40px;
   }
 }
 
 .advantages__item svg {
   fill: #00b2ff;
+
+  @include vp-767 {
+    width: 30px;
+  }
 }
 
 .advantages__item:hover svg {
@@ -55,25 +72,61 @@
 
 .advantages__item h3 {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 15px;
 
   font-family: $ff-roboto-condensed;
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
+
+  @include vp-1023 {
+    padding-top: 9px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
+
+    font-size: 20px;
+  }
 }
 
 .advantages__item p {
-  min-height: 120px;
-
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 35px;
+  padding-bottom: 22px;
 
   line-height: 22px;
   color: #041827;
+
+  @include vp-1023 {
+    padding-top: 6px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
+    padding-bottom: 0;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .advantages__item:hover p {
   color: #f2f5f6;
+}
+
+.advantages__description-max {
+  min-height: 120px;
+
+  @include vp-767 {
+    min-height: 190px;
+  }
+}
+
+.advantages__description-min {
+  min-height: 120px;
+
+  @include vp-767 {
+    min-height: 142px;
+  }
 }

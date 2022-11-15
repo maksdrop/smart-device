@@ -13,25 +13,35 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
-          <a class="header-logo">
-            <picture>
-              <source media="(max-width: 768px)" srcset="img/header/logo-mobile.svg">
-              <img src="img/header/logo-desktop.svg" width="215" height="55" alt="Логотип Smart Device.">
-            </picture>
-          </a>
-          <a class="header__email" href="mailto:info@sd.ru">
-            <svg width="21" height="20" role="img">
-              <use xlink:href="img/sprite_auto.svg#email"></use>
-            </svg>
-            <span>info@sd.ru</span>
-          </a>
-          <a class="header__phone" href="tel:74950005252">
-            <svg width="21" height="20" role="img">
-              <use xlink:href="img/sprite_auto.svg#phone-call"></use>
-            </svg>
-            <span>+7 (495) 000 52 52</span>
-          </a>
-          <button class="header__button" type="button" data-open-modal="feedback">заказать звонок</button>
+          <ul>
+            <li class="header__item-logo">
+              <a class="header-logo" tabindex="0">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/header/logo-mobile.svg">
+                  <img src="img/header/logo-desktop.svg" width="215" height="55" alt="Логотип Smart Device.">
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a class="header__email" href="mailto:info@sd.ru">
+                <svg width="21" height="20" role="img">
+                  <use xlink:href="img/sprite_auto.svg#email"></use>
+                </svg>
+                <span>info@sd.ru</span>
+              </a>
+            </li>
+            <li>
+              <a class="header__phone" href="tel:74950005252">
+                <svg width="21" height="20" role="img">
+                  <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+                </svg>
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </li>
+            <li>
+              <button class="header__button" type="button" data-open-modal="feedback">заказать звонок</button>
+            </li>
+          </ul>
         </div>
       </header>
       <main>
@@ -43,7 +53,7 @@
           </picture>
           <div class="container intro__container">
             <h2>Печатные платы</h2>
-            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
             <a class="intro__button" id="intro" href="#" data-toggle-mobile="бесплатная консультация" data-toggle-desktop="получить бесплатную консультацию">получить бесплатную консультацию</a>
           </div>
         </section>
@@ -56,28 +66,28 @@
                   <use xlink:href="img/sprite_auto.svg#stop-watch"></use>
                 </svg>
                 <h3>Оперативные сроки</h3>
-                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                <p class="advantages__description-max">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
               </li>
               <li class="advantages__item">
                 <svg width="35" height="35" aria-hidden="true">
                   <use xlink:href="img/sprite_auto.svg#hired"></use>
                 </svg>
                 <h3>Крупные поставщики</h3>
-                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+                <p class="advantages__description-max">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item">
                 <svg width="35" height="35" aria-hidden="true">
                   <use xlink:href="img/sprite_auto.svg#detective"></use>
                 </svg>
                 <h3>Полная конфиденциальность</h3>
-                <p>По желанию клиента  мы обеспечиваем полную конфиденциальность.</p>
+                <p class="advantages__description-min">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
               </li>
               <li class="advantages__item">
                 <svg width="35" height="35" aria-hidden="true">
                   <use xlink:href="img/sprite_auto.svg#price"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
-                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+                <p class="advantages__description-min">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
               </li>
             </ul>
           </div>
@@ -87,18 +97,18 @@
             <span class="about__year">2022</span>
             <div class="about__company">
               <h2 class="about__title">О компании</h2>
-              <p class="about__company-first">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-              <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
-              <p class="about__company-mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-              <p class="about__company-indent about__company-hide" data-indent>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-              <p class="about__company-indent about__company-hide" data-indent>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+              <p class="about__company-first">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
+              <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
+              <p class="about__company-mobile">Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+              <p class="about__company-indent about__company-hide" data-indent>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+              <p class="about__company-indent about__company-hide" data-indent>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.</p>
               <button class="about__button" type="button" data-button>подробнее</button>
             </div>
           </div>
         </section>
         <section class="services">
           <div class="container">
-            <h2 id="services" data-toggle-mobile="Товары и услуги Smart Device" data-toggle-desktop="Smart Device предлагает следующие товары и услуги">Smart Device предлагает следующие товары и услуги</h2>
+            <h2 id="services" data-toggle-mobile="Товары и&nbsp;услуги Smart Device" data-toggle-desktop="Smart Device предлагает следующие товары и&nbsp;услуги">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
             <ul class="services__list">
               <li class="services__item services__item--production">
                 <a class="services__link" href="#">
@@ -121,8 +131,8 @@
         <section class="questions">
           <div class="container">
             <div class="questions__container">
-              <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
-              <p class="questions__free">Мы проконсультируем Вас бесплатно</p>
+              <h2 class="questions__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
+              <p class="questions__free">Мы&nbsp;проконсультируем Вас бесплатно</p>
               <form class="form" action="https://echo.htmlacademy.ru/" method="post" data-form autocomplete="off">
                 <fieldset>
                   <label class="form__label-name" data-parent-name>
@@ -141,7 +151,7 @@
                 <label class="form__agree">
                   <input class="form__checkbox" id="agree" type="checkbox" required checked>
                   <span class="form__agree-mark"></span>
-                  <span class="form__agree-description">Я согласен на обработку персональных данных</span>
+                  <span class="form__agree-description">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                   </label>
                 <button class="form__button" type="submit">
                   <span>задать вопрос</span>
@@ -183,11 +193,11 @@
             </ul>
           </section>
           <section class="footer-sections">
-            <h2 class="footer-sections__title" data-accordion>разделы сайта</h2>
+            <h2 class="footer-sections__title" tabindex="0" data-accordion>разделы сайта</h2>
             <div class="footer-sections__container" data-accordion-list>
               <ul class="footer-sections__list footer-sections__list--first">
                 <li class="footer-sections__item">
-                  <a href="#">О компании</a>
+                  <a href="#">О&nbsp;компании</a>
                 </li>
                 <li class="footer-sections__item">
                   <a href="#">Продукты</a>
@@ -213,7 +223,7 @@
             </div>
           </section>
           <section class="footer-contacts">
-            <h2 class="footer-contacts__title" data-accordion>наш офис</h2>
+            <h2 class="footer-contacts__title" tabindex="0" data-accordion>наш офис</h2>
             <div class="footer-contacts__container" data-accordion-list>
               <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
               <a class="footer-contacts__phone" href="tel:74955894050">+7 (495) 589-40-50</a>
@@ -231,7 +241,7 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <h2 class="modal__title">Закажите звонок</h2>
-          <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
           <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" data-modal-form>
             <fieldset>
               <label class="form-modal__label-name" data-parent-name>
@@ -253,7 +263,7 @@
             <label class="form-modal__agree">
               <input class="form-modal__checkbox" name="checkbox" id="agree-modal" type="checkbox" required checked>
               <span class="form-modal__agree-mark" tabindex="0"></span>
-              <span class="form-modal__agree-description">Я согласен на обработку персональных данных</span>
+              <span class="form-modal__agree-description">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
           </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>

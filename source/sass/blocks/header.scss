@@ -6,26 +6,44 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
-
-  padding-top: 30px;
-  padding-bottom: 35px;
-
   @include vp-1439 {
     justify-content: space-between;
-
-    padding-top: 20px;
-    padding-bottom: 25px;
   }
 
   @include vp-1279 {
     flex-basis: auto;
   }
+}
+
+.header__container ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.header__container li {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 
   @include vp-767 {
     padding-top: 15px;
     padding-bottom: 20px;
+  }
+}
+
+.header__item-logo {
+  @include vp-1023 {
+    flex-grow: 2;
   }
 }
 
@@ -35,9 +53,18 @@
   display: flex;
   align-items: center;
 
-  margin-right: 30px;
-  padding-right: 60px;
-  padding-left: 35px;
+  margin-right: 115px;
+  padding: 5px 5px 5px 35px;
+
+  @include hover {
+    & svg {
+      fill: #93deff;
+    }
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 
   @include vp-1279 {
     justify-content: center;
@@ -45,7 +72,6 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    padding: 0;
   }
 }
 
@@ -61,6 +87,7 @@
 .header__email svg {
   position: absolute;
   left: 0;
+  fill: #00b2ff;
 
   @include vp-1279 {
     position: relative;
@@ -73,9 +100,18 @@
   display: flex;
   align-items: center;
 
-  margin-right: 145px;
-  padding-right: 40px;
-  padding-left: 35px;
+  margin-right: 161px;
+  padding: 5px 5px 5px 35px;
+
+  @include hover {
+    & svg {
+      fill: #93deff;
+    }
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 
   @include vp-1279 {
     justify-content: center;
@@ -83,8 +119,6 @@
     width: 40px;
     height: 40px;
     margin-right: 40px;
-    padding-right: 0;
-    padding-left: 0;
   }
 
   @include vp-1279 {
@@ -108,6 +142,7 @@
 .header__phone svg {
   position: absolute;
   left: 0;
+  fill: #00b2ff;
 
   @include vp-1279 {
     position: relative;
@@ -115,7 +150,7 @@
 }
 
 .header__button {
-  padding: 10px 15px;
+  padding: 11px 22px;
 
   border: 1px solid #f2f5f6;
   border-radius: 3px;
@@ -128,7 +163,21 @@
   text-transform: uppercase;
   color: #f2f5f6;
 
+  user-select: none;
   cursor: pointer;
+
+  @include hover {
+    border-color: #00b2ff;
+    background-color: #00b2ff;
+  }
+
+  @include hover-focus {
+    background-color: #00b2ff;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 
   @include vp-1023 {
     display: none;

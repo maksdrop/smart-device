@@ -29,6 +29,18 @@ function showAccordion() {
         hideContent();
       }
     });
+
+    item.addEventListener('keypress', (e) => {
+      const keyName = e.key;
+      if (keyName === 'Enter') {
+        if (item.classList.contains('footer__accorion--close')) {
+          hideContent();
+          showContent(i);
+        } else {
+          hideContent();
+        }
+      }
+    });
   });
 }
 
