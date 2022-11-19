@@ -4,6 +4,7 @@ function initValidation(formSelector, parentNameSelector, parentPhoneSelector, n
   const parentPhone = form.querySelector(parentPhoneSelector);
   const name = form.querySelector(nameSelector);
   const phone = form.querySelector(phoneSelector);
+  const lengthParentName = parentName.childNodes.length;
 
   document.querySelectorAll(attributed).forEach((attribute) => {
     attribute.removeAttribute('required');
@@ -22,8 +23,8 @@ function initValidation(formSelector, parentNameSelector, parentPhoneSelector, n
   };
 
   const createCondition = (selector) => {
-    if (selector.childNodes.length >= 3) {
-      selector.childNodes[2].remove();
+    if (selector.childNodes.length >= lengthParentName + 1) {
+      selector.childNodes[selector.childNodes.length - 1].remove();
     }
   };
 

@@ -189,6 +189,11 @@
   }
 }
 
+.form__checkbox:focus + .form__agree-mark {
+  outline: 2px solid #333333;
+  outline-offset: 1px;
+}
+
 .form__agree-description {
   font-size: 14px;
   color: #ffffff;
