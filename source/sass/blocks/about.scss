@@ -2,7 +2,7 @@
   padding: 120px 0;
 
   @include vp-1023 {
-    padding-top: 110px;
+    padding-top: 75px;
     padding-bottom: 80px;
   }
 
@@ -65,7 +65,7 @@
   }
 
   @include vp-1023 {
-    padding-left: 179px;
+    padding-left: 175px;
   }
 
   @include vp-767 {
@@ -80,6 +80,7 @@
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
+  font-weight: 400;
 
   @include vp-1023 {
     padding-bottom: 10px;

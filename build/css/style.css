@@ -717,7 +717,8 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  top: 20px;
+  width: 500px;
   padding: 40px;
   background-color: #00b3ff;
 }
@@ -734,7 +735,7 @@ button,
 .modal__description {
   margin: 0;
   padding-top: 15px;
-  padding-right: 120px;
+  padding-right: 10px;
   line-height: 20px;
   color: #ffffff;
 }
@@ -794,6 +795,13 @@ button,
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
+.header__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 365px 1fr;
+  grid-template-columns: 365px 1fr;
+}
+
 .header__container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,8 +817,8 @@ button,
 }
 
 .header__container li {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 33px;
+  padding-bottom: 45px;
 }
 
 .header__email {
@@ -821,7 +829,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 115px;
+  margin-right: 117px;
   padding: 5px 5px 5px 35px;
 }
 
@@ -849,7 +857,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 161px;
+  margin-right: 160px;
   padding: 5px 5px 5px 35px;
 }
 
@@ -870,7 +878,9 @@ button,
 }
 
 .header__button {
-  padding: 11px 22px;
+  max-width: 161px;
+  margin-right: 60px;
+  padding: 12px 16px;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   background-color: transparent;
@@ -878,8 +888,9 @@ button,
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #f2f5f6;
+  color: #f2f5f7;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -897,8 +908,11 @@ button,
 }
 
 .header-logo {
+  height: 55px;
   display: inline-block;
   margin-right: 160px;
+  margin-top: 30px;
+  margin-bottom: 35px;
   vertical-align: bottom;
 }
 
@@ -921,7 +935,7 @@ button,
 }
 
 .intro__container {
-  padding-left: 190px;
+  padding-left: 185px;
   padding-bottom: 280px;
 }
 
@@ -1000,7 +1014,6 @@ button,
   color: #00b2ff;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
-  cursor: pointer;
 }
 
 .advantages__item:hover {
@@ -1027,7 +1040,6 @@ button,
 
 .advantages__item p {
   margin: 0;
-  padding-top: 15px;
   padding-bottom: 22px;
   line-height: 22px;
   color: #041827;
@@ -1039,10 +1051,12 @@ button,
 
 .advantages__description-max {
   min-height: 120px;
+  padding-top: 15px;
 }
 
 .advantages__description-min {
   min-height: 120px;
+  padding-top: 15px;
 }
 
 .about {
@@ -1098,6 +1112,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
+  font-weight: 400;
 }
 
 .about__company p {
@@ -1151,8 +1166,8 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 650px;
-  grid-template-rows: 650px;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   gap: 85px;
   margin: 0;
   padding: 0;
@@ -1175,6 +1190,7 @@ button,
 
 .services__item {
   position: relative;
+  min-height: 650px;
   background-size: cover;
   background-color: #1c4769;
 }
@@ -1274,6 +1290,7 @@ button,
 }
 
 .form {
+  position: relative;
   display: -ms-grid;
   display: grid;
   grid-template-areas: "wrapper wrapper" "button checkbox";
@@ -1478,7 +1495,7 @@ button,
 }
 
 .form__button.focus-visible:focus {
-  background-color: #333333;
+  background-color: #fafafa;
 }
 
 .form__button:active,
@@ -1493,6 +1510,11 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.form__button:hover span,
+.form__button:focus span {
+  color: #019bdf;
 }
 
 .footer {
@@ -1527,6 +1549,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 200px;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -1542,6 +1567,10 @@ button,
   display: -ms-flexbox;
   display: flex;
   fill: #f8fdff;
+}
+
+.footer-social__icon:hover {
+  opacity: 0.5;
 }
 
 .footer-sections {
@@ -1635,7 +1664,8 @@ button,
 }
 
 .footer-contacts__phone {
-  padding-top: 7px;
+  max-width: 180px;
+  margin-top: 7px;
   line-height: 25px;
 }
 
@@ -1839,17 +1869,17 @@ button,
 }
 
 .form-modal button.focus-visible:focus {
-  background-color: #333333;
-}
-
-.form-modal button:active,
-.form-modal button.focus-visible:active {
-  opacity: 0.9;
+  background-color: #fafafa;
 }
 
 .form-modal__button {
   margin-top: 25px;
-  padding: 15px;
+  padding: 13px;
+}
+
+.form-modal__button:hover span,
+.form-modal__button:focus span {
+  color: #019bdf;
 }
 
 /* @mixin hover-focus {
@@ -1894,14 +1924,34 @@ button,
 */
 
 @media (max-width: 1439px) {
-  .container {
-    padding: 0 50px;
-  }
-
   .header__container {
+    -ms-grid-columns: 300px 1fr;
+    grid-template-columns: 300px 1fr;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .header__container ul {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+  }
+
+  .header__email {
+    margin-right: 70px;
+  }
+
+  .header__phone {
+    margin-right: 70px;
+  }
+
+  .header__button {
+    margin-right: 20px;
+  }
+
+  .header-logo {
+    margin-right: 60px;
   }
 
   .advantages__list {
@@ -1909,58 +1959,10 @@ button,
     grid-template-columns: 1fr 1fr;
   }
 
-  .services__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-    padding-bottom: 75px;
-  }
-
-  .services__list h3 {
-    padding-top: 40px;
-    padding-left: 45px;
-  }
-
-  .services__item {
-    position: relative;
-    height: 250px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background-position: 100%;
-  }
-
-  .services__item--production {
-    background-image: url("../img/services/services-prodaction-tablet.png");
-    background-size: cover;
-  }
-
-  .services__item--mounting {
-    background-image: url("../img/services/services-mounting-tablet.png");
-  }
-
-  .services__item--kits {
-    background-image: url("../img/services/services-kits-tablet.png");
-  }
-
   .services__link {
     position: absolute;
     width: 100%;
     height: 100%;
-  }
-
-  .questions::before {
-    display: none;
-  }
-
-  .questions__container {
-    max-width: 670px;
-    margin: 0 auto;
-  }
-
-  .questions__container::before {
-    display: none;
   }
 
   .form {
@@ -1978,62 +1980,26 @@ button,
   }
 }
 
-@media (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1439px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1439px) and (min-resolution: 144dpi), (max-width: 1439px) and (min-resolution: 1.5dppx) {
-  .services__item--production {
-    background-image: url("../img/services/services-prodaction-tablet@2x.png");
-  }
-
-  .services__item--mounting {
-    background-image: url("../img/services/services-mounting-tablet@2x.png");
-  }
-
-  .services__item--kits {
-    background-image: url("../img/services/services-kits-tablet@2x.png");
-  }
-}
-
 @media (max-width: 1279px) {
   .header__container {
+    -ms-grid-columns: 290px 1fr;
+    grid-template-columns: 290px 1fr;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
 
+  .header__item-logo {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+  }
+
   .header__email {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-  }
-
-  .header__email span {
-    display: none;
-  }
-
-  .header__email svg {
-    position: relative;
-  }
-
-  .header__phone {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
     margin-right: 40px;
   }
 
   .header__phone {
-    margin-right: 20px;
-  }
-
-  .header__phone span {
-    display: none;
-  }
-
-  .header__phone svg {
-    position: relative;
+    margin-right: 40px;
   }
 
   .footer__container {
@@ -2119,19 +2085,63 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .header__container li {
-    padding-top: 20px;
-    padding-bottom: 25px;
+  .container {
+    padding: 0 50px;
   }
 
-  .header__item-logo {
-    -webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
+  .header {
+    position: absolute;
+  }
+
+  .header__container li {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .header__email {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .header__email span {
+    display: none;
+  }
+
+  .header__email svg {
+    position: relative;
+  }
+
+  .header__phone {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .header__phone span {
+    display: none;
+  }
+
+  .header__phone svg {
+    position: relative;
   }
 
   .header__button {
     display: none;
+  }
+
+  .header-logo {
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 
   .intro__background {
@@ -2171,12 +2181,17 @@ button,
     padding-top: 9px;
   }
 
-  .advantages__item p {
+  .advantages__description-max {
     padding-top: 6px;
   }
 
+  .advantages__description-min {
+    padding-top: 0;
+    min-height: 195px;
+  }
+
   .about {
-    padding-top: 110px;
+    padding-top: 75px;
     padding-bottom: 80px;
   }
 
@@ -2185,7 +2200,7 @@ button,
   }
 
   .about__company {
-    padding-left: 179px;
+    padding-left: 175px;
   }
 
   .about__company h2 {
@@ -2201,7 +2216,52 @@ button,
   }
 
   .services__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
     padding-top: 40px;
+    padding-bottom: 75px;
+  }
+
+  .services__list h3 {
+    padding-top: 37px;
+    padding-left: 45px;
+  }
+
+  .services__item {
+    position: relative;
+    min-height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-position: 100%;
+  }
+
+  .services__item--production {
+    background-image: url("../img/services/services-prodaction-tablet.png");
+    background-size: cover;
+  }
+
+  .services__item--mounting {
+    background-image: url("../img/services/services-mounting-tablet.png");
+  }
+
+  .services__item--kits {
+    background-image: url("../img/services/services-kits-tablet.png");
+  }
+
+  .questions::before {
+    display: none;
+  }
+
+  .questions__container {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  .questions__container::before {
+    display: none;
   }
 
   .questions__title {
@@ -2225,16 +2285,33 @@ button,
   }
 
   .footer {
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 65px;
-  }
-
-  .footer {
-    padding-top: 33px;
   }
 
   .footer-sections__item {
     padding-top: 9px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .services__item--production {
+    background-image: url("../img/services/services-prodaction-tablet@2x.png");
+  }
+
+  .services__item--mounting {
+    background-image: url("../img/services/services-mounting-tablet@2x.png");
+  }
+
+  .services__item--kits {
+    background-image: url("../img/services/services-kits-tablet@2x.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .header-logo img {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2256,8 +2333,15 @@ button,
     width: 100%;
   }
 
+  .header__container {
+    -ms-grid-columns: 159px 1fr;
+    grid-template-columns: 159px 1fr;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+
   .header__container li {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 20px;
   }
 
@@ -2265,9 +2349,10 @@ button,
     margin-right: 0;
   }
 
-  .header-logo img {
-    width: 35px;
+  .header-logo {
     height: 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
   .intro__container {
@@ -2322,18 +2407,20 @@ button,
   }
 
   .advantages__item p {
-    padding-top: 5px;
-    padding-bottom: 0;
     font-size: 14px;
     line-height: 19px;
   }
 
   .advantages__description-max {
     min-height: 190px;
+    padding-top: 5px;
+    padding-bottom: 0;
   }
 
   .advantages__description-min {
     min-height: 142px;
+    padding-top: 5px;
+    padding-bottom: 0;
   }
 
   .about {
@@ -2452,12 +2539,17 @@ button,
   }
 
   .form__agree-mark {
+    top: 23px;
     left: -21px;
   }
 
   .form__button {
     width: 100%;
     margin-right: 0;
+  }
+
+  .footer {
+    padding-top: 33px;
   }
 
   .footer__container {
@@ -2587,7 +2679,7 @@ button,
   }
 
   .footer-contacts__phone {
-    padding-top: 21px;
+    margin-top: 21px;
     line-height: 11px;
     font-size: 14px;
   }
@@ -2708,7 +2800,7 @@ button,
   }
 
   .form__button:hover:not(.focus-visible) {
-    background-color: #333333;
+    background-color: #fafafa;
   }
 
   .footer-social__logo:hover:not(.focus-visible) {
@@ -2732,7 +2824,7 @@ button,
   }
 
   .form-modal button:hover:not(.focus-visible) {
-    background-color: #333333;
+    background-color: #fafafa;
   }
 }
 

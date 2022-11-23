@@ -1,16 +1,16 @@
-function showNewText(selectorElement, viewport) {
+function showTabindex(selectorElement, viewport) {
   const textElement = document.querySelector(selectorElement);
   const screen = window.matchMedia(viewport);
 
   function changeScreen(e) {
     if (e.matches) {
-      textElement.textContent = textElement.dataset.toggleMobile;
+      textElement.tabIndex = 0;
     } else {
-      textElement.textContent = textElement.dataset.toggleDesktop;
+      textElement.removeAttribute('tabIndex');
     }
   }
   screen.addListener(changeScreen);
   changeScreen(screen);
 }
 
-export default showNewText;
+export default showTabindex;

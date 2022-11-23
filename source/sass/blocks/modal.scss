@@ -58,8 +58,9 @@
 
   &__content {
     position: relative;
+    top: 20px;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
     background-color: #00b3ff;
@@ -83,7 +84,7 @@
   &__description {
     margin: 0;
     padding-top: 15px;
-    padding-right: 120px;
+    padding-right: 10px;
 
     line-height: 20px;
 

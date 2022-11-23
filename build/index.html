@@ -13,15 +13,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
+          <a class="header-logo" tabindex="0">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/header/logo-mobile.svg">
+              <img src="img/header/logo-desktop.svg" width="215" height="55" alt="Логотип Smart Device.">
+            </picture>
+          </a>
           <ul>
-            <li class="header__item-logo">
-              <a class="header-logo" tabindex="0">
-                <picture>
-                  <source media="(max-width: 768px)" srcset="img/header/logo-mobile.svg">
-                  <img src="img/header/logo-desktop.svg" width="215" height="55" alt="Логотип Smart Device.">
-                </picture>
-              </a>
-            </li>
             <li>
               <a class="header__email" href="mailto:info@sd.ru">
                 <svg width="21" height="20" role="img">
@@ -137,7 +135,7 @@
                 <fieldset>
                   <label class="form__label-name" data-parent-name>
                     <span class="visually-hidden">Имя.</span>
-                    <input class="form__input form__name" type="text" name="name" placeholder="Имя" pattern="^[a-zA-Za-Яа-яЁё]+$" maxlength="25" data-name data-attribute required>
+                    <input class="form__input form__name" type="text" name="name" placeholder="Имя" maxlength="25" data-name data-attribute required>
                   </label>
                   <label class="form__label-phone" data-parent-phone>
                     <span class="visually-hidden">Номер телефона.</span>
@@ -193,7 +191,7 @@
             </ul>
           </section>
           <section class="footer-sections">
-            <h2 class="footer-sections__title" tabindex="0" data-accordion>разделы сайта</h2>
+            <h2 class="footer-sections__title" id="sections" data-accordion>разделы сайта</h2>
             <div class="footer-sections__container" data-accordion-list>
               <ul class="footer-sections__list footer-sections__list--first">
                 <li class="footer-sections__item">
@@ -223,7 +221,7 @@
             </div>
           </section>
           <section class="footer-contacts">
-            <h2 class="footer-contacts__title" tabindex="0" data-accordion>наш офис</h2>
+            <h2 class="footer-contacts__title" id="contacts" data-accordion>наш офис</h2>
             <div class="footer-contacts__container" data-accordion-list>
               <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
               <a class="footer-contacts__phone" href="tel:74955894050">+7 (495) 589-40-50</a>
@@ -246,7 +244,7 @@
             <fieldset>
               <label class="form-modal__label-name" data-parent-name>
                 <span class="visually-hidden">Имя.</span>
-                <input class="form-modal__name form-modal__input" type="text" name="name" placeholder="Имя" pattern="^[a-zA-Za-Яа-яЁё]+$" maxlength="25" data-name data-focus data-attribute required>
+                <input class="form-modal__name form-modal__input" type="text" name="name" placeholder="Имя" maxlength="25" data-name data-focus data-attribute required>
               </label>
               <label class="form-modal__label-phone" data-parent-phone>
                 <span class="visually-hidden">Номер телефона.</span>

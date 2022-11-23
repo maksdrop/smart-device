@@ -30,6 +30,8 @@
 
 .footer-social__list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
 
   margin: 0;
   padding: 0;
@@ -62,4 +64,8 @@
   display: flex;
 
   fill: #f8fdff;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

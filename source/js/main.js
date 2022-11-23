@@ -7,6 +7,7 @@ import './modules/form-validation';
 import initValidation from './modules/form-validation';
 import scrollElement from './modules/scroll';
 import showNewText from './modules/toggle-text';
+import showTabindex from './modules/toggle-tabindex';
 
 // ---------------------------------
 
@@ -31,6 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollElement();
     showNewText('#intro', '(max-width: 768px)');
     showNewText('#services', '(max-width: 768px)');
+    showTabindex('#sections', '(max-width: 768px)');
+    showTabindex('#contacts', '(max-width: 768px)');
   });
 });
 

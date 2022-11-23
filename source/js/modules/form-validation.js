@@ -33,7 +33,7 @@ function initValidation(formSelector, parentNameSelector, parentPhoneSelector, n
 
     let isvalid = 0;
 
-    if (name.value.length <= 1) {
+    if (name.value.trim().length <= 1) {
       createCondition(parentName);
       createMessage(parentName, 'Напишите свое имя');
     } else {
