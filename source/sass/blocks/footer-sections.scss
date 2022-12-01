@@ -3,8 +3,8 @@
 
   padding-top: 5px;
 
-  @include vp-1279 {
-    max-width: 220px;
+  @include vp-1023 {
+    max-width: 250px;
 
     padding-top: 40px;
   }
@@ -57,6 +57,10 @@
   padding-top: 20px;
 
   @include vp-1279 {
+    padding-right: 22px;
+  }
+
+  @include vp-1023 {
     flex-direction: column;
 
     padding-top: 22px;
@@ -74,7 +78,7 @@
   list-style-type: none;
 
   &--first {
-    min-width: 220px;
+    max-width: 220px;
     margin-right: 24px;
   }
 
@@ -85,8 +89,18 @@
   @include vp-1279 {
     margin-right: 0;
 
+    &--first {
+      margin-right: 24px;
+    }
+
     &--last {
       padding-top: 0;
+    }
+  }
+
+  @include vp-1023 {
+    &--last {
+      padding-top: 10px;
     }
   }
 }

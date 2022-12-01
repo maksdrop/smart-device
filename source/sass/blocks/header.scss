@@ -11,7 +11,7 @@
 
 .header__container {
   display: grid;
-  grid-template-columns: 365px 1fr;
+  grid-template-columns: 374px 1fr;
 
   @include vp-1439 {
     grid-template-columns: 300px 1fr;
@@ -31,7 +31,6 @@
 
 .header__container ul {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 
   margin: 0;
@@ -45,8 +44,12 @@
 }
 
 .header__container li {
-  padding-top: 33px;
-  padding-bottom: 45px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+  &:last-child {
+    padding-top: 34px;
+  }
 
   @include vp-1023 {
     padding-top: 20px;
@@ -71,6 +74,7 @@
   display: flex;
   align-items: center;
 
+  margin-bottom: 10px;
   margin-right: 117px;
   padding: 5px 5px 5px 35px;
 
@@ -127,6 +131,7 @@
   display: flex;
   align-items: center;
 
+  margin-bottom: 10px;
   margin-right: 160px;
   padding: 5px 5px 5px 35px;
 
