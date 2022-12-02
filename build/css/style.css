@@ -1943,11 +1943,11 @@ button,
   }
 
   .header__email {
-    margin-right: 70px;
+    margin-right: 90px;
   }
 
   .header__phone {
-    margin-right: 70px;
+    margin-right: 100px;
   }
 
   .header__button {
@@ -2003,11 +2003,11 @@ button,
   }
 
   .header__email {
-    margin-right: 40px;
+    margin-right: 34px;
   }
 
   .header__phone {
-    margin-right: 40px;
+    margin-right: 34px;
   }
 
   .questions__container::before {
@@ -2060,7 +2060,7 @@ button,
 
   .header__container li {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .header__email {
@@ -2384,7 +2384,7 @@ button,
 
   .header__container li {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .header__phone {
